@@ -25,8 +25,9 @@ public class CreateDriverSession {
 //              caps.setCapability("avdLaunchTimeout", 180000);
                 caps.setCapability("appPackage", "io.appium.android.apis");
                 caps.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
-                caps.setCapability("app",
-                        "/Users/emilianorodriguez/Desktop/Appium/apps/ApiDemos-debug.apk");
+//                caps.setCapability("appPackage", "com.google.android.apps.maps");
+//                caps.setCapability("appActivity", "com.google.android.maps.MapsActivity");
+                caps.setCapability("app", "/Users/emilianorodriguez/Desktop/Appium/apps/ApiDemos-debug.apk");
                 return new AndroidDriver(url, caps);
 
             case "iOS":
