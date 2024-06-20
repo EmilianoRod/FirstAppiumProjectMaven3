@@ -38,6 +38,8 @@ public class CreateDriverSession {
                         "/Users/emilianorodriguez/Desktop/Appium/apps/ios-uicatalog-master/UIKitCatalog/build/Release-iphonesimulator/UIKitCatalog-iphonesimulator.app");
                 caps.setCapability("simulatorStartupTimeout", 180000);
                 caps.setCapability("bundleId", "com.example.apple-samplecode.UICatalog");
+//                caps.setCapability("bundleId", "com.apple.Maps");
+
                 // caps.setCapability("xcodeOrgId", "F44N5MSDA3");
                 // caps.setCapability("xcodeSigningId", "iPhone Developer");
                 return new IOSDriver(url, caps);
