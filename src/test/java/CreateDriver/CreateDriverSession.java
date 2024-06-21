@@ -31,9 +31,9 @@ public class CreateDriverSession {
                 return new AndroidDriver(url, caps);
 
             case "iOS":
-//                caps.setCapability("deviceName", "iPhone 14 Pro");
+                caps.setCapability("deviceName", "iPhone 14 Pro");
                 caps.setCapability("automationName", "XCUITest");
-//                caps.setCapability("udid", "A2D7F500-945B-4D3D-A356-2213AA25601C");
+                caps.setCapability("udid", "A2D7F500-945B-4D3D-A356-2213AA25601C");
                 caps.setCapability("app",
                         "/Users/emilianorodriguez/Desktop/Appium/apps/ios-uicatalog-master/UIKitCatalog/build/Release-iphonesimulator/UIKitCatalog-iphonesimulator.app");
                 caps.setCapability("simulatorStartupTimeout", 180000);
