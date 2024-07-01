@@ -18,16 +18,18 @@ public class CreateDriverSession {
 
         switch (platformName) {
             case "Android":
-                caps.setCapability("deviceName", "pixel_3a");
+//                caps.setCapability("deviceName", "pixel_8_pro");
                 caps.setCapability("automationName", "uiautomator2");
-                caps.setCapability("udid", "emulator-5554");
+//                caps.setCapability("udid", "emulator-5554");
 //              caps.setCapability("avd", "Pixel_XL_API_30");
+                caps.setCapability("udid", "5d993b290601");
 //              caps.setCapability("avdLaunchTimeout", 180000);
                 caps.setCapability("appPackage", "io.appium.android.apis");
                 caps.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
 //                caps.setCapability("appPackage", "com.google.android.apps.maps");
 //                caps.setCapability("appActivity", "com.google.android.maps.MapsActivity");
                 caps.setCapability("app", "/Users/emilianorodriguez/Desktop/Appium/apps/ApiDemos-debug.apk");
+                caps.setCapability("chromedriverExecutable", "/Users/emilianorodriguez/Desktop/chromedriver/chromedriver126.0.6478.126/chromedriver");
 //                caps.setCapability("unlockType", "pattern");
 //                caps.setCapability("unlockKey", "125478963");
                 return new AndroidDriver(url, caps);
