@@ -22,20 +22,25 @@ public class CreateBrowserSession {
                 caps.setCapability("automationName", "uiautomator2");
 //                caps.setCapability("udid", "emulator-5554");
 //              caps.setCapability("avd", "Pixel_XL_API_30");
-                caps.setCapability("udid", "5d993b290601");
-//              caps.setCapability("avdLaunchTimeout", 180000);
+                caps.setCapability("udid", "48563be");
+              caps.setCapability("avdLaunchTimeout", 180000);
                 caps.setCapability("browserName", "Chrome");
-                caps.setCapability("chromedriverExecutable", "/Users/emilianorodriguez/Desktop/chromedriver/chromedriver126.0.6478.126/chromedriver");
+                caps.setCapability("chromedriverExecutableDir",
+                        "/Users/emilianorodriguez/node_modules/appium-chromedriver/chromedriver/mac");
+
 
                 //UNLOCK SCREEN PIN FOR MY REAL DEVICE
                 caps.setCapability("unlockType", "pin");
-                caps.setCapability("unlockKey", "53925233");
+                caps.setCapability("unlockKey", "0000");
                 return new AndroidDriver(url, caps);
 
             case "iOS":
-                caps.setCapability("deviceName", "iPhone 14 Pro");
+//                caps.setCapability("deviceName", "iPhone 14 Pro");
+                caps.setCapability("deviceName", "iPhone");
                 caps.setCapability("automationName", "XCUITest");
-                caps.setCapability("udid", "A2D7F500-945B-4D3D-A356-2213AA25601C");
+//                caps.setCapability("udid", "A2D7F500-945B-4D3D-A356-2213AA25601C");
+                caps.setCapability("udid", "0178cb7d81c0e3f7398d4a497b384896d40b55b5");
+
                 caps.setCapability("simulatorStartupTimeout", 180000);
                 caps.setCapability("browserName", "Safari");
                 return new IOSDriver(url, caps);
